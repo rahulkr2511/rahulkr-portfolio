@@ -90,15 +90,6 @@ export const projects: Project[] = [
   images: ["/projects/product-manager/preview.png"],
   },
   {
-    slug: "finance-automation",
-    name: "SBI Finance Automation",
-    blurb: "Bank-statement analyzer with auto-categorized spending charts.",
-    stack: ["Python", "Streamlit", "Pandas", "Plotly"],
-    impact: "Turns a raw bank statement CSV into categorized, interactive spend charts",
-    link: "https://github.com/rahulkr2511/Finance-Automation",
-    images: ["/projects/finance-automation/dashboard.jpg"],
-  },
-  {
     slug: "emotion-game",
     name: "Emotion-Based Cognitive Game for Children",
     blurb: "CNN-driven game that reads a child's mood and adapts gameplay in real time.",

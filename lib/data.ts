@@ -9,7 +9,7 @@ export const profile = {
   github: "https://github.com/rahulkr2511",
   linkedin: "https://linkedin.com/in/rahul-kr-08b2b61b5",
   resumeUrl: "/resume.pdf",
-  availability: "Immediately available \u00b7 Open to remote & relocation \u00b7 IST (UTC+5:30)",
+  availability: "Actively seeking opportunities \u00b7 Open to remote & relocation \u00b7 IST (UTC+5:30)",
   summary:
     "Senior Software Engineer specializing in modern frontend systems, performance optimization, and real-time architectures. Over the past 4 years, I\u2019ve designed micro-frontend ecosystems, cut bundle sizes by 35%, and built high-concurrency SaaS interfaces that handle thousands of real-time agent sessions without missing a beat. While my core focus is delivering polished, accessible (WCAG 2.1), and bulletproof React/TypeScript UIs, I work seamlessly across the full stack\u2014from Spring Boot microservices and Node.js down to WebSockets and PostgreSQL. I build systems designed for scale, speed, and exceptional developer experience.",
 };

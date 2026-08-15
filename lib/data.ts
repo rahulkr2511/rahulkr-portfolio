@@ -124,9 +124,21 @@ export const stack = [
   },
 ];
 
-export const awards = [
-  "Certificate of Appreciation from Exotel's SVP of Engineering for technical contributions and impact",
-  "Recognized in the company-wide quarterly achievement list for consistent high performance",
+type Award = {
+  text: string;
+  link?: string;
+  linkLabel?: string;
+};
+
+export const awards: Award[] = [
+  {
+    text: "Certificate of Appreciation from Exotel's SVP of Engineering for technical contributions and impact",
+    link: "https://www.linkedin.com/posts/rahul-k-r-08b2b61b5_i-am-extremely-happy-to-share-that-ive-received-share-6956495779930787840-crEA/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIOS-sBJcMfAoSLCAYDHNngTqrua3ITDjA",
+    linkLabel: "View certificate",
+  },
+  {
+    text: "Recognized in the company-wide quarterly achievement list for consistent high performance",
+  },
 ];
 
 export const education = {

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { profile } from "@/lib/data";
 
+
 export default function Hero() {
   const command = "whoami";
   const [typed, setTyped] = useState("");

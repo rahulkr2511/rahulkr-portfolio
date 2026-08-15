@@ -1,13 +1,19 @@
+"use client";
+
 import { stack } from "@/lib/data";
 import TypedLine from "@/components/TypedLine";
+import { useEffect, useState } from "react";
+
 
 export default function Stack() {
+  const [revealed, setRevealed] = useState(false);
+
   return (
     <section id="stack" className="max-w-content mx-auto px-6 py-20 border-t border-line">
-      <TypedLine as="h2" text="$ cat ./stack.yml" className="font-mono text-sm text-mute mb-1" />
-      <p className="text-2xl font-mono font-semibold text-paper mb-10">How I build</p>
+      <TypedLine as="h2" text="$ cat ./stack.yml" className="font-mono text-sm text-mute mb-1" onDone={() => setRevealed(true)} />
+      <p className={`text-2xl font-mono font-semibold text-paper mb-10 transition-opacity duration-700 delay-500 ${revealed ? "opacity-100" : "opacity-0"}`}>How I build</p>
 
-      <div className="space-y-3">
+      <div className={`space-y-3 transition-opacity duration-700 delay-500 ${revealed ? "opacity-100" : "opacity-0"}`}>
         {stack.map((layer, i) => (
           <div
             key={layer.layer}

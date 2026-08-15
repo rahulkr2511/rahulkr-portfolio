@@ -1,14 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { projects } from "@/lib/data";
 import TypedLine from "@/components/TypedLine";
+import { useEffect, useState } from "react";
+
 
 export default function Projects() {
+  const [revealed, setRevealed] = useState(false);
+
   return (
     <section id="projects" className="max-w-content mx-auto px-6 py-20 border-t border-line">
-      <TypedLine as="h2" text="$ ls ./projects" className="font-mono text-sm text-mute mb-1" />
-      <p className="text-2xl font-mono font-semibold text-paper mb-10">Selected work</p>
+      <TypedLine as="h2" text="$ ls ./projects" className="font-mono text-sm text-mute mb-1" onDone={() => setRevealed(true)}  />
+      <p className={`text-2xl font-mono font-semibold text-paper mb-10 transition-opacity duration-700 delay-500 ${revealed ? "opacity-100" : "opacity-0"}`}>Selected work</p>
 
-      <div className="grid md:grid-cols-2 gap-5">
+      <div className={`grid md:grid-cols-2 gap-5 transition-opacity duration-700 delay-500 ${revealed ? "opacity-100" : "opacity-0"}`}>
         {projects.map((p) => (
           <div
             key={p.slug}

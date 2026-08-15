@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { CaseStudy } from "@/lib/case-studies";
 import TypedLine from "@/components/TypedLine";
+import { useEffect, useState } from "react";
+
 
 export default function CaseStudyView({ study }: { study: CaseStudy }) {
+  const [revealed, setRevealed] = useState(false);
+
   return (
     <main className="max-w-content mx-auto px-6 py-16 md:py-24">
       <Link href="/#projects" className="font-mono text-sm text-mute hover:text-signal transition-colors">
@@ -40,13 +46,13 @@ export default function CaseStudyView({ study }: { study: CaseStudy }) {
       </div>
 
       <section className="mt-14 border-t border-line pt-10">
-        <TypedLine as="h2" text="$ cat ./overview.md" className="font-mono text-sm text-mute mb-3" />
-        <p className="text-paper/90 leading-relaxed max-w-3xl">{study.overview}</p>
+        <TypedLine as="h2" text="$ cat ./overview.md" className="font-mono text-sm text-mute mb-3" onDone={() => setRevealed(true)} />
+        <p className={`text-paper/90 leading-relaxed max-w-3xl transition-opacity duration-700 delay-500 ${revealed ? "opacity-100" : "opacity-0"}`}>{study.overview}</p>
       </section>
 
       <section className="mt-14 border-t border-line pt-10">
-        <TypedLine as="h2" text="$ cat ./architecture.md" className="font-mono text-sm text-mute mb-4" />
-        <div className="space-y-8">
+        <TypedLine as="h2" text="$ cat ./architecture.md" className="font-mono text-sm text-mute mb-4" onDone={() => setRevealed(true)} />
+        <div className={`space-y-8 transition-opacity duration-700 delay-500 ${revealed ? "opacity-100" : "opacity-0"}`}>
           {study.diagrams.map((d) => (
             <figure key={d.src}>
               <div className="rounded-lg overflow-hidden border border-line bg-paper">
@@ -60,8 +66,8 @@ export default function CaseStudyView({ study }: { study: CaseStudy }) {
       </section>
 
       <section className="mt-14 border-t border-line pt-10 pb-10">
-        <TypedLine as="h2" text="$ cat ./highlights.md" className="font-mono text-sm text-mute mb-4" />
-        <ul className="space-y-3">
+        <TypedLine as="h2" text="$ cat ./highlights.md" className="font-mono text-sm text-mute mb-4" onDone={() => setRevealed(true)} />
+        <ul className={`space-y-3 transition-opacity duration-700 delay-500 ${revealed ? "opacity-100" : "opacity-0"}`}>
           {study.highlights.map((h) => (
             <li key={h} className="text-paper/90 text-sm leading-relaxed flex gap-2">
               <span className="text-signal shrink-0">›</span>

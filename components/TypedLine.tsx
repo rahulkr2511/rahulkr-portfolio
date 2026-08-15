@@ -7,11 +7,13 @@ export default function TypedLine({
   className = "",
   as: Tag = "p",
   speedMs = 28,
+  onDone, 
 }: {
   text: string;
   className?: string;
   as?: "p" | "h2" | "h3";
   speedMs?: number;
+  onDone?: () => void;
 }) {
   const ref = useRef<HTMLElement>(null);
   const [typed, setTyped] = useState("");
@@ -26,6 +28,7 @@ export default function TypedLine({
     if (prefersReduced) {
       setTyped(text);
       setDone(true);
+      onDone?.(); 
       return;
     }
 
@@ -44,6 +47,7 @@ export default function TypedLine({
               if (i >= text.length) {
                 clearInterval(id);
                 setDone(true);
+                onDone?.(); 
               }
             }, speedMs);
           }

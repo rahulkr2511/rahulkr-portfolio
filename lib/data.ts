@@ -81,6 +81,15 @@ export const projects: Project[] = [
     images: ["/projects/craftmycv/craftmycv.jpg"],
   },
   {
+  slug: "product-manager-app",
+  name: "Product Manager App",
+  blurb: "Full-stack inventory/product management tool with CRUD operations, image uploads, and search.",
+  stack: ["Spring Boot", "Spring Security", "Spring Data JPA", "H2","React", "Vite", "CSS", "HTML", "BLOB storage"],
+  impact: "Basic-auth-protected REST API (public browsing, authenticated mutations) backing a card-based product catalog UI with image upload, search, and CRUD",
+  link: "https://github.com/rahulkr2511/product-manager-app",
+  images: ["/projects/product-manager/preview.png"],
+  },
+  {
     slug: "finance-automation",
     name: "SBI Finance Automation",
     blurb: "Bank-statement analyzer with auto-categorized spending charts.",
@@ -108,7 +117,7 @@ export const stack = [
   },
   {
     layer: "Backend",
-    items: ["Node.js", "Spring Boot", "Java", "REST APIs", "gRPC", "Python", "Flask"],
+    items: ["Node.js", "Spring Boot", "Spring Security", "JWT", "Java", "REST APIs", "gRPC", "Python", "Flask"],
   },
   {
     layer: "Data & Infra",
@@ -120,7 +129,7 @@ export const stack = [
   },
   {
     layer: "Practice",
-    items: ["Web Performance (Core Web Vitals)", "Accessibility (WCAG 2.1)", "System Design & ADRs", "WebRTC", "WebSockets", "Web Workers"],
+    items: ["Web Performance (Core Web Vitals)", "Accessibility (WCAG 2.1)", "System Design & ADRs", "WebRTC", "WebSockets", "Web Workers", "Micro-Frontends", "Responsive Design", "Agile/Scrum"],
   },
 ];
 

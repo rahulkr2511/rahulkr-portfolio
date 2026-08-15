@@ -18,7 +18,7 @@ export const experience = [
   {
     hash: "e4a9f21",
     company: "Exotel Techcom Pvt Ltd",
-    title: "Member of Technical Staff-1 — Senior Software Engineer Equivalent",
+    title: "Member of Technical Staff - 1 -- Senior Software Engineer Equivalent",
     period: "Jul 2024 \u2014 Present",
     message: "feat: deliver end-to-end SaaS architecture, high-concurrency UI & Java microservices",
     details: [
@@ -32,7 +32,7 @@ export const experience = [
   {
     hash: "9c2b7de",
     company: "Exotel Techcom Pvt Ltd",
-    title: "Member of Technical Staff-1",
+    title: "Member of Technical Staff - 1",
     period: "Jul 2022 \u2014 Jun 2024",
     message: "feat: build real-time distributed pipelines, micro-frontends & microservice integrations",
     details: [
@@ -108,7 +108,7 @@ export const stack = [
   },
   {
     layer: "Backend",
-    items: ["Node.js", "Spring Boot", "Spring Security", "JWT", "Java", "REST APIs", "gRPC", "Python", "Flask"],
+    items: ["Node.js", "Spring Boot", "Spring Security", "JWT", "OAuth2", "Java", "REST APIs", "gRPC", "Python", "Flask"],
   },
   {
     layer: "Data & Infra",
@@ -116,11 +116,11 @@ export const stack = [
   },
   {
     layer: "Testing & Tooling",
-    items: ["Git", "Jest", "React Testing Library", "Playwright", "JUnit", "Postman", "Swagger/OpenAPI", "Prometheus", "Grafana", "Figma"],
+    items: ["Git", "Jest", "Cypress", "React Testing Library", "Playwright", "JUnit", "Postman", "Swagger/OpenAPI", "Prometheus", "Grafana", "Elasticsearch", "Figma", "Vite"],
   },
   {
     layer: "Practice",
-    items: ["Web Performance (Core Web Vitals)", "Accessibility (WCAG 2.1)", "System Design & ADRs", "WebRTC", "WebSockets", "Web Workers", "Micro-Frontends", "Responsive Design", "Agile/Scrum"],
+    items: ["Web Performance (Core Web Vitals)", "Accessibility (WCAG 2.1)", "System Design & ADRs", "WebRTC", "WebSockets", "Web Workers", "Micro-Frontends", "Responsive Design", "Agile/Scrum", "i18n"],
   },
 ];
 

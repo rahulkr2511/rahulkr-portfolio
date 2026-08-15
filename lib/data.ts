@@ -85,7 +85,7 @@ export const projects: Project[] = [
   name: "Product Manager App",
   blurb: "Full-stack inventory/product management tool with CRUD operations, image uploads, and search.",
   stack: ["Spring Boot", "Spring Security", "Spring Data JPA", "H2","React", "Vite", "CSS", "HTML", "BLOB storage"],
-  impact: "Basic-auth-protected REST API (public browsing, authenticated mutations) backing a card-based product catalog UI with image upload, search, and CRUD",
+  impact: "Basic-auth-protected REST API (public browsing, authenticated mutations) backing a card-based product catalog UI with image upload, search, and CRUD operations.",
   link: "https://github.com/rahulkr2511/product-manager-app",
   images: ["/projects/product-manager/preview.png"],
   },

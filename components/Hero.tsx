@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { profile } from "@/lib/data";
 
 
@@ -31,21 +32,48 @@ export default function Hero() {
         {!done && <span className="type-cursor" />}
       </p>
 
-      <h1
-        className={`mt-6 font-mono font-semibold text-4xl md:text-6xl tracking-tight text-paper transition-opacity duration-700 ${
-          done ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        {profile.name}
-      </h1>
+      <div className="mt-6 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+        <div
+          className={`shrink-0 order-first transition-opacity duration-700 delay-150 ${
+            done ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <div className="relative h-24 w-24 md:h-28 md:w-28">
+            <div className="h-full w-full overflow-hidden rounded-full border-2 border-signal/50 bg-surface shadow-[0_0_0_4px_rgba(15,18,22,0.6)]">
+              <Image
+                src={profile.photoUrl}
+                alt={`Portrait of ${profile.name}`}
+                width={320}
+                height={320}
+                priority
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <span
+              className="absolute bottom-1 right-1 h-3.5 w-3.5 rounded-full bg-pass ring-4 ring-ink"
+              title="Open to work"
+            />
+          </div>
+        </div>
 
-      <p
-        className={`mt-3 text-xl md:text-2xl text-signal font-medium transition-opacity duration-700 delay-150 ${
-          done ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        {profile.role}
-      </p>
+        <div>
+          <h1
+            className={`font-mono font-semibold text-4xl md:text-6xl tracking-tight text-paper transition-opacity duration-700 ${
+              done ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {profile.name}
+          </h1>
+
+          <p
+            className={`mt-3 text-xl md:text-2xl text-signal font-medium transition-opacity duration-700 delay-150 ${
+              done ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {profile.role}
+          </p>
+        </div>
+      </div>
 
       <p
         className={`mt-6 max-w-2xl text-mute leading-relaxed transition-opacity duration-700 delay-300 ${

@@ -33,7 +33,7 @@ export const caseStudies: Record<string, CaseStudy> = {
       "PostgreSQL schema across users, sessions, availability, and notification tables via JPA",
     ],
     diagrams: [
-      { src: "/case-studies/peernest/architecture.png", caption: "WebRTC signaling architecture \u2014 React client, Spring Boot backend, peer-to-peer media" },
+      { src: "/case-studies/peernest/architecture.png", caption: "End-to-end system architecture \u2014 React/TypeScript client, Spring Boot backend, PostgreSQL, WebRTC/STOMP real-time layer" },
     ],
   },
 };

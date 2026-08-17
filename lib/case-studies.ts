@@ -22,7 +22,7 @@ export const caseStudies: Record<string, CaseStudy> = {
       { label: "HLD doc", href: "https://github.com/rahulkr2511/MentoringPlatform/blob/main/Documentation/HLD_MentoringPlatform.md" },
       { label: "Demo video", href: "https://github.com/rahulkr2511/MentoringPlatform/blob/main/Documentation/Demo-Mentoring-Platform.mp4" },
     ],
-    heroImage: "/projects/peernest/landing.jpg",
+    heroImage: "/projects/peernest/landing.png",
     overview:
       "A React client talks to a Spring Boot backend over REST for auth, profiles, and session booking, and over WebSocket (STOMP) for real-time signaling and chat. Video itself is peer-to-peer WebRTC \u2014 the server's job is just getting two peers to find each other and exchange offers/candidates.",
     highlights: [

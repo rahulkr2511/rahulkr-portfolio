@@ -7,7 +7,7 @@ export const profile = {
   location: "Bengaluru, India",
   email: "krahulrajank@gmail.com",
   github: "https://github.com/rahulkr2511",
-  linkedin: "https://linkedin.com/in/rahul-kr-08b2b61b5",
+  linkedin: "https://www.linkedin.com/in/rahul-k-r-08b2b61b5/",
   resumeUrl: "/resume.pdf",
   photoUrl: "/Photo.png",
   availability: "Actively seeking opportunities \u00b7 Open to remote & relocation \u00b7 IST (UTC+5:30)",

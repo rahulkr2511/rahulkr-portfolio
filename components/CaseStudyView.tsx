@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CaseStudy } from "@/lib/case-studies";
 import TypedLine from "@/components/TypedLine";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 
 export default function CaseStudyView({ study }: { study: CaseStudy }) {
@@ -19,9 +20,15 @@ export default function CaseStudyView({ study }: { study: CaseStudy }) {
       <p className="text-mute mt-4 max-w-2xl leading-relaxed">{study.tagline}</p>
 
       {study.heroImage && (
-        <div className="rounded-lg overflow-hidden border border-line mt-8">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={study.heroImage} alt={study.name} className="w-full h-auto block" />
+        <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-line mt-8">
+          <Image
+            src={study.heroImage}
+            alt={study.name}
+            fill
+            priority // Loads immediately above-the-fold without lazy-delay
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+            className="object-cover"
+          />
         </div>
       )}
 

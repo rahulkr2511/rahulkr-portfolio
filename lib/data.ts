@@ -69,7 +69,7 @@ export const projects: Project[] = [
     link: "https://github.com/rahulkr2511/MentoringPlatform",
     demo: "https://mentoringplatform-client.onrender.com/",
     caseStudySlug: "peernest",
-    images: ["/projects/peernest/landing.jpg"],
+    images: ["/projects/peernest/preview.png"],
   },
   {
     slug: "craftmycv",

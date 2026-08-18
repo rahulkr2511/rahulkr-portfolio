@@ -27,7 +27,7 @@ export const experience = [
       "Led frontend engineering for the Omnichannel (Voice & Chat) platform — a responsive, Redux-driven UI with optimistic updates supporting 10k+ concurrent users for enterprise clients including QIIC, Blue Dart, and Tafaseel",
       "Engineered backend modules in Java, OSGi, and Spring Boot, building localized REST APIs with internationalization (i18n) support to enable multi-locale formatting across the platform",
       "Cut bundle size by 35% via code-splitting, caching, lazy-loading, and memoization, driving measurable Core Web Vitals gains tracked via Grafana RUM",
-      "Conducted root cause analysis (RCA) on 100+ critical production issues, establishing preventive action plans (POA) to ensure minimal service disruption across enterprise accounts",
+      "Adopted GenAI-assisted engineering workflows using MCP (Model Context Protocol) with Cursor to automate PostgreSQL debugging and Confluence updates, and built Cursor skills for automated code reviews and Playwright E2E test generation, cutting code review effort by 6 hrs/week."
     ],
   },
   {
@@ -38,10 +38,11 @@ export const experience = [
     message: "feat: build real-time distributed pipelines, micro-frontends & microservice integrations",
     details: [
       "Engineered a micro-frontend framework using cross-domain messaging patterns, enabling 3+ independent module deployment pipelines and secure runtime integration across legacy (GWT) and modern UI applications",
+      "Conducted root cause analysis (RCA) on 100+ critical production issues, establishing preventive action plans (POA) to ensure minimal service disruption across enterprise accounts",
       "Integrated UI workflows with 7+ Spring Boot microservices via API Gateway (REST, JWT auth) and gRPC, consuming Kafka events over WebSockets for real-time state sync across high-concurrency sessions",
       "Maintained infrastructure observability with Kubernetes, ArgoCD, Prometheus, and Grafana (RUM) to drive 99%+ service uptime",
       "Engineered custom keyboard navigation loops and shortcuts across the core voice interface, improving WCAG 2.1 accessibility (a11y) and reducing agent task completion time",
-      "Delivered architecture POCs and mentored engineers on best practices, eliminating XSS vulnerabilities using DOMPurify and strict Content Security Policy (CSP)",
+      "Delivered architecture POCs and mentored team members on best practices, eliminating XSS vulnerabilities via DOMPurify and Content Security Policy (CSP) while driving UI performance optimizations across core modules.",
     ],
   },
 ];
@@ -117,7 +118,7 @@ export const stack = [
   },
   {
     layer: "Testing & Tooling",
-    items: ["Git", "Jest", "Cypress", "React Testing Library", "Playwright", "JUnit", "Postman", "Swagger/OpenAPI", "Prometheus", "Grafana", "Elasticsearch", "Figma", "Vite"],
+    items: ["Git", "Jest", "Cypress", "React Testing Library", "Playwright", "JUnit", "Postman", "Swagger/OpenAPI", "Prometheus", "Grafana", "Elasticsearch", "Figma", "Vite", "Cursor (GenAI-assisted workflows)", "MCP (Model Context Protocol)"],
   },
   {
     layer: "Practice",

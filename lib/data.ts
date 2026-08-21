@@ -24,7 +24,7 @@ export const experience = [
     message: "feat: deliver end-to-end SaaS architecture, high-concurrency UI & Java microservices",
     details: [
       "Led sprint planning, Architecture Decision Records (ADRs), and release delivery for ~80% of core modules on a high-concurrency SaaS platform, keeping delivery slippage under 10%",
-      "Led frontend engineering for the Omnichannel (Voice & Chat) platform — a responsive, Redux-driven UI with optimistic updates supporting 10k+ concurrent users for enterprise clients including QIIC, Blue Dart, and Tafaseel",
+      "Led frontend engineering for the Omnichannel (Voice & Chat) platform — a responsive, Redux-driven UI with optimistic updates supporting 10k+ concurrent users for enterprise clients including Zerodha, QIIC, Blue Dart, and Redcliffe",
       "Engineered backend modules in Java, OSGi, and Spring Boot, building localized REST APIs with internationalization (i18n) support to enable multi-locale formatting across the platform",
       "Cut bundle size by 35% via code-splitting, caching, lazy-loading, and memoization, driving measurable Core Web Vitals gains tracked via Grafana RUM",
       "Adopted GenAI-assisted engineering workflows using MCP (Model Context Protocol) with Cursor to automate PostgreSQL debugging and Confluence updates, and built Cursor skills for automated code reviews and Playwright E2E test generation, cutting code review effort by 6 hrs/week."

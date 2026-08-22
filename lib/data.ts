@@ -12,7 +12,7 @@ export const profile = {
   photoUrl: "/Photo.png",
   availability: "Actively seeking opportunities \u00b7 Open to remote & relocation \u00b7 IST (UTC+5:30)",
   summary:
-    "Senior Software Engineer specializing in modern frontend systems, performance optimization, and real-time architectures. Over the past 4 years, I\u2019ve designed micro-frontend ecosystems, cut bundle sizes by 35%, and built high-concurrency SaaS interfaces that handle thousands of real-time agent sessions without missing a beat. While my core focus is delivering polished, accessible (WCAG 2.1), and bulletproof React/TypeScript UIs, I work seamlessly across the full stack\u2014from Spring Boot microservices and Node.js down to WebSockets and PostgreSQL. I build systems designed for scale, speed, and exceptional developer experience.",
+    "Senior Software Engineer who treats a dropped event or a slow render as a lost customer, not a bug ticket. Over the past 4 years, I\u2019ve engineered micro-frontend ecosystems, cut bundle sizes by 35%, and built high-concurrency systems handling thousands of real-time sessions with zero tolerance for dropped state. My instinct is React/TypeScript first\u2014but I move just as naturally through Spring Boot microservices, Kafka event pipelines, Redis caching, and PostgreSQL when that\u2019s where the problem actually lives. I\u2019ve also built AI-augmented engineering workflows (MCP, Cursor) that cut review cycles by 6 hrs/week, because speed shouldn\u2019t come at the cost of rigor. Scale, speed, and maintainability aren\u2019t trade-offs to me\u2014they\u2019re the baseline every system I build has to hit.",
 };
 
 export const experience = [
